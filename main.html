@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.scss">
+    <title>RomaCon -ひらがなからローマ字へ-</title>
+</head>
+
+<body>
+    <header>
+        <h1>RomaCon</h1>
+        <nav>
+            <label for="link">参考：</label>
+            <a href="http://www1.iwate-ed.jp/tantou/joho/digital/h19_pro3/romaji_hyou.pdf" id="link">http://www1.iwate-ed.jp/tantou/joho/digital/h19_pro3/romaji_hyou.pdf</a>
+        </nav>
+    </header>
+    <main>
+        <div class="area">
+            <p>＜before＞</p>
+            <textarea name="before" class="text" id="before" cols="45" rows="15" placeholder="ひらがなで にゅうりょく してください。"></textarea>
+        </div>
+        <div class="area">
+            <p>＜after＞</p>
+            <textarea name="after" class="text" id="after" cols="45" rows="15" placeholder="そうすればここに変換結果が表示されます。"></textarea>
+        </div>
+    </main>
+    <footer>
+        <p id="timer"><span id="timertext">2018年11月9日 10時8分8秒</span><br>
+            <script>
+                // <![CDATA[
+                function Clock() {
+                    var dd = new Date();
+                    var text = "© " + dd.getFullYear() + " RomaCon.";
+                    document.getElementById("timertext").innerHTML = text;
+                }
+                Clock();
+
+            </script>
+        </p>
+    </footer>
+</body>
+
+</html>
